@@ -2,11 +2,6 @@
 <head>
 <title>Co-Editing Test Form</title>
 <style>
-	body {
-		margin: 0;
-		padding: 0;
-		border: 5px solid #FF0000;
-	}
 	h3{
 	  font-family: sans-serif;
 	  font-size: 25pt;
@@ -34,7 +29,9 @@
 		box-shadow: 0px 0px 0px 3px #FF0000;
 		border-radius: 2px;
 	}
-
+	.glance-coeding-outline {
+		outline: dashed #FF0000 3px;
+	}
 
 </style>
 </head>
@@ -48,7 +45,7 @@
 <!----- First Name ---------------------------------------------------------->
 <tr>
 <td>First Name</td>
-<td><input class="glance-coeding" type="text" name="First_Name" maxlength="30"/>
+<td><input class="glance-coeding-outline" type="text" name="First_Name" maxlength="30"/>
 (max 30 characters a-z and A-Z)
 </td>
 </tr>
@@ -166,7 +163,7 @@
 <!----- Email Id ---------------------------------------------------------->
 <tr>
 <td>Email</td>
-<td><input type="text" name="Email_Id" maxlength="100" /></td>
+<td><input type="text" class="glance-coeding-outline" name="Email_Id" maxlength="100" /></td>
 </tr>
 
 <!----- Mobile Number ---------------------------------------------------------->
